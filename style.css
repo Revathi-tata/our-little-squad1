@@ -2,6 +2,122 @@
 OUR LITTLE SQUAD - DREAMY SAKURA THEME
 ===================================== */
 
+/* RESPONSIVE DESIGN */
+
+/* TABLET */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .friends-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 599px) {
+
+    body {
+        background-size: 100% auto;
+        background-position: top center;
+        background-repeat: repeat-y;
+        background-attachment: scroll;
+    }
+
+    section {
+        padding: 35px 15px;
+    }
+
+    .navbar {
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: clamp(30px, 9vw, 42px);
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .friends-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .friend-card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .friend-card h3 {
+        font-size: 17px;
+    }
+
+    .friend-card p {
+        font-size: 12px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .memory-box {
+        padding: 22px 15px;
+    }
+
+.surprise-letter {
+    background-size: 100% 100%, 50% 100%, 50% 100%;
+    background-position: center, left top, right top;
+    background-repeat: no-repeat;
+}
+    footer {
+        padding: 20px 12px;
+        font-size: 13px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 360px) {
+
+    .friends-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -571,4 +687,25 @@ section {
 .surprise-letter {
     padding: 20px;
 }
+}
+/* MOBILE SURPRISE LETTER FIX */
+@media screen and (max-width: 599px) {
+
+    .surprise-letter {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 10px;
+
+        background-size:
+            100% 100%,
+            100% 100%,
+            100% 100%;
+
+        background-position:
+            center,
+            left center,
+            right center;
+
+        background-repeat: no-repeat;
+    }
 }
