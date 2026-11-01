@@ -1,0 +1,574 @@
+/* =====================================
+OUR LITTLE SQUAD - DREAMY SAKURA THEME
+===================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+body {
+font-family: 'Segoe UI', sans-serif;
+color: #542477;
+overflow-x: hidden;
+
+background:
+    linear-gradient(
+        rgba(255, 225, 250, 0.12),
+        rgba(235, 210, 255, 0.15)
+    ),
+    url("Dreamy Sakura Butterfly Lakescape.png");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+min-height: 100vh;
+
+}
+
+/* COMMON SECTIONS */
+
+section {
+position: relative;
+z-index: 2;
+padding: 55px 6%;
+background: transparent;
+}
+
+/* NAVIGATION */
+
+.navbar {
+position: sticky;
+top: 12px;
+z-index: 100;
+width: 90%;
+margin: 15px auto;
+padding: 18px 28px;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+background: rgba(255, 255, 255, 0.65);
+backdrop-filter: blur(18px);
+
+border: 1px solid white;
+border-radius: 20px;
+
+box-shadow: 0 8px 25px rgba(150, 80, 180, 0.15);
+
+}
+
+.navbar h2 {
+font-size: 25px;
+color: #8128bd;
+}
+
+.navbar a {
+text-decoration: none;
+color: #68239a;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.navbar a:hover {
+color: #ed55a9;
+transform: translateY(-2px);
+}
+
+/* HERO */
+
+.hero {
+min-height: 430px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+text-align: center;
+padding: 45px 20px;
+
+}
+
+.welcome {
+font-size: 17px;
+font-weight: bold;
+color: #79349f;
+letter-spacing: 2px;
+}
+
+.hero h1 {
+font-size: clamp(42px, 7vw, 75px);
+font-weight: 900;
+margin: 20px 0;
+
+background: linear-gradient(
+    90deg,
+    #b52bdc,
+    #ed55a9,
+    #7627c4
+);
+
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+
+}
+
+.hero h2 {
+font-size: 32px;
+color: #582078;
+margin-bottom: 15px;
+}
+
+.hero-text {
+max-width: 650px;
+font-size: 18px;
+line-height: 1.7;
+color: #542477;
+}
+
+/* MAIN BUTTON */
+
+.main-button {
+display: inline-block;
+margin-top: 25px;
+padding: 15px 35px;
+background: linear-gradient(90deg, #d94bc5, #f05ba8);
+
+color: white;
+text-decoration: none;
+font-size: 17px;
+font-weight: bold;
+
+border-radius: 40px;
+box-shadow: 0 8px 20px rgba(210, 65, 170, 0.3);
+
+transition: 0.3s;
+
+}
+
+.main-button:hover {
+transform: translateY(-5px) scale(1.04);
+box-shadow: 0 12px 25px rgba(210, 65, 170, 0.4);
+}
+
+.hero-decoration {
+margin-top: 20px;
+font-size: 25px;
+}
+
+/* FRIENDS SECTION */
+
+.friends-section {
+text-align: center;
+}
+
+.small-heading {
+font-size: 15px;
+font-weight: bold;
+letter-spacing: 2px;
+color: #8539a7;
+margin-bottom: 10px;
+}
+
+.section-title {
+font-size: 38px;
+color: #65228c;
+margin-bottom: 10px;
+}
+
+.section-description {
+font-size: 18px;
+margin-bottom: 25px;
+}
+
+/* FRIEND CARDS */
+
+.friends-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 22px;
+margin-top: 30px;
+}
+
+.friend-card {
+padding: 15px;
+background: rgba(255, 255, 255, 0.72);
+backdrop-filter: blur(15px);
+
+border: 1px solid rgba(255, 255, 255, 0.9);
+border-radius: 22px;
+
+box-shadow: 0 8px 25px rgba(130, 60, 160, 0.18);
+
+transition: 0.4s;
+
+}
+
+.friend-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 15px 30px rgba(170, 70, 190, 0.3);
+}
+
+.friend-card img {
+width: 100%;
+height: 190px;
+object-fit: cover;
+border-radius: 15px;
+}
+
+.friend-card h3 {
+color: #8124b5;
+font-size: 22px;
+margin-top: 12px;
+}
+
+.friend-card p {
+color: #633c7d;
+margin-top: 8px;
+font-weight: 600;
+}
+
+/* MEMORIES SECTION */
+
+.memories-section {
+text-align: center;
+}
+
+.memory-box {
+max-width: 750px;
+margin: auto;
+padding: 35px;
+
+
+background: rgba(255, 255, 255, 0.65);
+backdrop-filter: blur(15px);
+
+border: 1px solid white;
+border-radius: 25px;
+
+box-shadow: 0 8px 25px rgba(130, 60, 160, 0.15);
+
+
+}
+
+.memory-box span {
+font-size: 25px;
+}
+
+.memory-box h2 {
+font-size: 35px;
+color: #8128aa;
+margin: 15px 0;
+}
+
+.memory-box p {
+font-size: 17px;
+line-height: 1.9;
+}
+
+.memory-box h3 {
+color: #a03bc0;
+margin-top: 20px;
+font-size: 22px;
+}
+
+/* SURPRISE SECTION */
+
+.surprise-section {
+text-align: center;
+}
+
+.surprise-section h2 {
+color: #8128aa;
+font-size: 32px;
+margin: 12px 0;
+}
+
+.surprise-intro {
+margin-bottom: 25px;
+font-size: 17px;
+}
+
+.gift {
+display: inline-block;
+cursor: pointer;
+transition: 0.3s;
+animation: giftFloat 2s ease-in-out infinite;
+}
+
+.gift-emoji {
+font-size: 80px;
+}
+
+.gift p {
+font-weight: bold;
+color: #8128aa;
+}
+
+.gift:hover {
+transform: scale(1.15);
+}
+
+@keyframes giftFloat {
+0%, 100% {
+transform: translateY(0);
+}
+
+50% {
+    transform: translateY(-12px);
+}
+}
+
+/* SURPRISE LETTER */
+
+.surprise-letter {
+    display: none;
+    max-width: 750px;
+    min-height: 400px;
+    margin: 30px auto;
+    padding: 40px;
+
+    background:
+        linear-gradient(
+            rgba(255, 240, 250, 0.42),
+            rgba(255, 240, 250, 0.42)
+        ),
+        url("images/group.jpg"),
+        url("images/memory2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat;
+    
+
+    border: 2px solid white;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(7, 231, 108, 0.25);
+
+    color: #0b0a0b49;
+    line-height: 1.9;
+}
+
+.surprise-letter.show {
+    display: block;
+    animation: letterAppear 0.8s ease;
+}
+
+.surprise-letter.show {
+display: block;
+animation: letterAppear 0.8s ease;
+}
+
+.surprise-letter h2 {
+margin-bottom: 20px;
+text-align: center;
+color:#100f0e;
+}
+
+
+.surprise-letter h3 {
+margin-top: 20px;
+color: #100f0e;
+text-align: center;
+}
+
+.letter-hearts {
+font-size: 25px;
+margin-top: 15px;
+}
+
+@keyframes letterAppear {
+from {
+opacity: 0;
+transform: translateY(30px);
+}
+
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+}
+
+/* FOOTER */
+
+footer {
+position: relative;
+z-index: 2;
+
+
+padding: 25px;
+text-align: center;
+
+color: #682b8a;
+background: rgba(255, 255, 255, 0.55);
+backdrop-filter: blur(12px);
+
+line-height: 1.8;
+
+
+}
+
+/* MAGIC BACKGROUND */
+
+.magic-background {
+position: fixed;
+inset: 0;
+overflow: hidden;
+pointer-events: none;
+z-index: 1;
+}
+
+.star {
+position: absolute;
+color: white;
+text-shadow: 0 0 10px #d78bea;
+animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+0%, 100% {
+opacity: 0.2;
+transform: scale(0.8);
+}
+
+
+50% {
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+
+}
+
+/* FLYING BUTTERFLIES */
+
+.butterfly {
+position: fixed;
+font-size: 25px;
+opacity: 0.85;
+pointer-events: none;
+z-index: 3;
+animation: fly 18s linear infinite;
+}
+
+.butterfly-one {
+top: 20%;
+animation-delay: 0s;
+}
+
+.butterfly-two {
+top: 50%;
+animation-delay: 5s;
+}
+
+.butterfly-three {
+top: 75%;
+animation-delay: 10s;
+}
+
+@keyframes fly {
+0% {
+transform: translate(-10vw, 10vh) rotate(0deg);
+}
+
+
+50% {
+    transform: translate(50vw, -20vh) rotate(25deg);
+}
+
+100% {
+    transform: translate(110vw, 10vh) rotate(-20deg);
+}
+
+
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+.navbar {
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.navbar h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+}
+
+.navbar a {
+    font-size: 14px;
+}
+
+section {
+    padding: 40px 5%;
+}
+
+.hero {
+    min-height: 420px;
+}
+
+.hero h2 {
+    font-size: 24px;
+}
+
+.hero-text {
+    font-size: 15px;
+}
+
+.friends-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.friend-card img {
+    height: 160px;
+}
+
+.section-title {
+    font-size: 30px;
+}
+
+
+}
+
+@media (max-width: 480px) {
+
+
+.friends-container {
+    grid-template-columns: 1fr;
+}
+
+.friend-card img {
+    height: 220px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.section-title {
+    font-size: 27px;
+}
+
+.memory-box {
+    padding: 22px;
+}
+
+.surprise-letter {
+    padding: 20px;
+}
+}
